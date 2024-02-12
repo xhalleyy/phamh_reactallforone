@@ -6,7 +6,7 @@ import { greaterApi } from '../services/DataService.js';
 export default function GreaterComponent() {
     const [first, setFirst] = useState('');
     const [second, setSecond] = useState('');
-    const [result, setResult] = useState('');
+    const [result, setResult] = useState('Which number is greater?');
 
     const getResult = async () => {
         const response = await greaterApi(first, second);

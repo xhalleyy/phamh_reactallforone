@@ -12,7 +12,7 @@ export default function MadlibComponent() {
   const [item, setItem] = useState("");
   const [place, setPlace] = useState("");
   const [adverb, setAdverb] = useState("");
-  const [result, setResult] = useState("");
+  const [result, setResult] = useState("I'll tell you an interesting story!");
 
   const getResult = async () => {
     const response = await madLibApi(
@@ -162,7 +162,7 @@ export default function MadlibComponent() {
         </div>
 
         <div className="lg:col-span-1 sm:col-span-2 place-self-center lg:mt-10 lg:mb-0 lg:mx-0 mx-5 mt-5">
-          <div className="bg-customPurple/70 rounded-lg lg:me-28 text-lg lg:text-xl xl:text-2xl">
+          <div className="bg-customPurple/70 rounded-lg lg:me-16 text-lg lg:text-2xl xl:text-2xl">
             <p className="font-nova text-center px-3 py-3 lg:py-6 text-white">
               {result}
             </p>

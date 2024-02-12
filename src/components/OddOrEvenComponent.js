@@ -5,7 +5,7 @@ import { oddOrEvenApi } from '../services/DataService.js';
 
 export default function OddOrEvenComponent() {
     const [number, setNumber] = useState('');
-    const [result, setResult] = useState('');
+    const [result, setResult] = useState("I'll tell you if a number is odd or even!");
 
     const getResult = async () => {
         const response = await oddOrEvenApi(number);

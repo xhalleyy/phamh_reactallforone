@@ -6,7 +6,7 @@ import { summationApi } from '../services/DataService.js';
 export default function AddNumbersComponent() {
     const [first, setFirst] = useState('');
     const [second, setSecond] = useState('');
-    const [result, setResult] = useState('');
+    const [result, setResult] = useState('I can add numbers!');
 
     const getResult = async () => {
         const response = await summationApi(first, second);

@@ -6,7 +6,7 @@ import { restaurantApi } from '../services/DataService.js';
 export default function RestaurantComponent() {
 
     const [category, setCategory] = useState('');
-    const [result, setResult] = useState('');
+    const [result, setResult] = useState('What restaurant should you eat at?');
 
     const getResult = async () => {
         const response = await restaurantApi(category);

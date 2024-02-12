@@ -6,7 +6,7 @@ import { magicApi } from '../services/DataService.js';
 export default function MagicComponent() {
 
 
-    const [result, setResult] = useState('');
+    const [result, setResult] = useState('Ask away!');
 
     const getResult = async () => {
         const response = await magicApi();

@@ -6,7 +6,7 @@ import { numberReverseApi } from '../services/DataService.js';
 export default function NumReverseComponent() {
     
     const [input, setInput] = useState('');
-    const [result, setResult] = useState('');
+    const [result, setResult] = useState("I'll reverse a number sequence!");
 
     const getResult = async () => {
         const response = await numberReverseApi(input);

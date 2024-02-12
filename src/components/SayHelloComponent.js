@@ -8,7 +8,7 @@ import { sayHelloApi } from '../services/DataService.js';
 
 export default function SayHelloComponent() {
     const [name, setName] = useState('');
-    const [result, setResult] = useState('');
+    const [result, setResult] = useState('Hello, What is your name?');
 
     const getResult = async () => {
         const response = await sayHelloApi(name);

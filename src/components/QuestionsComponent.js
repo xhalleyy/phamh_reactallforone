@@ -6,7 +6,7 @@ import { questionsApi } from '../services/DataService.js';
 export default function QuestionsComponent() {
     const [name, setName] = useState('');
     const [time, setTime] = useState('');
-    const [result, setResult] = useState('');
+    const [result, setResult] = useState('What time did you wake up?');
 
     const getResult = async () => {
         const response = await questionsApi(name, time);

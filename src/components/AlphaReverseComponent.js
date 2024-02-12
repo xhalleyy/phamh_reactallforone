@@ -6,7 +6,7 @@ import { alphaReverseApi } from '../services/DataService.js';
 export default function AlphaReverseComponent() {
 
     const [input, setInput] = useState('');
-    const [result, setResult] = useState('');
+    const [result, setResult] = useState("I'll reverse any sequence!");
 
     const getResult = async () => {
         const response = await alphaReverseApi(input);
